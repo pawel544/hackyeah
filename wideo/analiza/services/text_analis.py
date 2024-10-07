@@ -1,7 +1,13 @@
 import numpy as np
 import re
-
-
+import librosa
+import logging
+from transformers import pipeline
+from .audio_analis import transcribe_audio
+import difflib
+import textstat
+import detect
+from textblob import TextBlob
 def analyze_pauses(audio_path: str, pause_threshold: float = 1.0) -> list:
     """Analizuje długie pauzy w mowie."""
     try:

@@ -1,6 +1,11 @@
 import speech_recognition as sr
 from deepface import DeepFace
-
+import librosa
+from moviepy.editor import VideoFileClip
+import logging
+import numpy as np
+import cv2
+import mediapipe as mp
 def extract_audio_from_video(video_path: str, audio_path: str) -> None:
     """Ekstrahuje audio z pliku wideo."""
     try:
