@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <title>Analiza</title>
   <link real="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 17vh;
+            margin: 3;
+        }
+
+        button {
+    background-color: transparent;
+    border: none; /
+    cursor: pointer;
+}
+          button i {
+            font-size: 24px;
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +37,12 @@
 </body>
 <head>
     <form id='video_path'>
-        <label for="video_path"> Wprowadz link do wideo</label>
+        <label  for="video_path"><h1> Wprowadz link do wideo</h1>></label>
         <input type="url" id="videoLink"  name="videoLink" required>
-        <button type="submit"> Wyślij</button>
+        <button type="submit">
+            <i class="fas fa-arrow-right"></i>
+
+        </button>
 
 
     </form>

@@ -7,6 +7,10 @@ import logging
 logging.basicConfig(level=logging.INFO)
 def index(request):
     return render(request, 'analiza/czek.html')
+def indyk(requwst):
+    return render(requwst, "analiza/strona_główna.html")
+def obróbka(request):
+    return render(request, 'analiza/obróbka_wideo.html')
 
 
 def link(request):

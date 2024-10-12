@@ -6,7 +6,9 @@ from . import views
 app_name='wideo'
 
 urlpatterns =[
-    path('', views.index, name='index'),
+    path('czek/', views.index, name='index'),
+    path("", views.indyk, name='indyk'),
+    path("obróbka/", views.obróbka, name='obróbka')
   # path('extract_audio_from_video/', audio_analis.extract_audio_from_video, name='extract_audio_from_video'),
    # path('transcribe_audio/', audio_analis.transcribe_audio, name='transcribe_audio'),
    #path('analyze_volume/', audio_analis.analyze_volume, name='analyze_volume'),
